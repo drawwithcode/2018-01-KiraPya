@@ -7,7 +7,7 @@ function setup() {
 }
 
 function draw() {
-	background(204);
+	background(21);
 
 	//Neck
 	line(250, 285, 250, 345);
