@@ -10,9 +10,6 @@ function setup() {
 
 }
 
-var x=20;
-var y=60;
-var speed=2;
 
 function draw() {
   // put drawing code here
@@ -20,10 +17,15 @@ function draw() {
   colorMode(RGB);
 
   //ellipse
+	push();
    noStroke();
    fill(0,0,0);
-   ellipse(x, y, 70, 70);
-   x=x+speed;
+	 translate(mouseX, mouseY);
+	 rotate(frameCount/40);
+   rectMode(CENTER);
+   rect(0, 0, 40, 40);
+	pop();
+
 
  //line
  strokeWeight(1);
